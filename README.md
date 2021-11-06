@@ -4,6 +4,9 @@ impalement all labs  of chapters and the steps for every topic
 [Huawei Tools Download link](https://mega.nz/folder/WkUDmQjK#jUw9HnMms1lHpdvhagCc9g) 
 ---
   ## CH4 IPv4 Basic Configurations
+  ---
+  ![Lab_Topology](/CH4/Basic_Conf.jpg)
+  ---
   1. **Login to Router (local or Remote)**
       - **Local login:** using console cable & Putty App
       - **Remote login:** using Putty App & (SSH  or telnet)
