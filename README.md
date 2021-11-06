@@ -6,7 +6,7 @@ impalement all labs  of chapters and the steps for every topic
   ## CH4 IPv4 Basic Configurations
   ---
   ![Lab_Topology](/CH4/Basic_Conf.jpg)
-  ---
+
   1. **Login to Router (local or Remote)**
       - **Local login:** using console cable & Putty App
       - **Remote login:** using Putty App & (SSH  or telnet)
@@ -25,6 +25,9 @@ impalement all labs  of chapters and the steps for every topic
 ______________________________________________________________________________________________________________________________________________________________________________  
   
   ## CH5 Static Route IP Address Configuration commands
+  ---
+  >![Static_route_Topology](/CH5/STATIC_Route.jpg)
+  
   ### Static Route IPv4 Configuration Steps:
   1. **Login to Router (local or Remote)**
       - **Local login:** using console cable & Putty App
