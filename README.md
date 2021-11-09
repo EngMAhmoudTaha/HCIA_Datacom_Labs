@@ -174,4 +174,36 @@ ________________________________________________________________________________
   10. **Validate the STP**
       - **\<Huawei\>** display stp brief
 
+---
+
+  ## CH11 Eth-Trunk 
+  
+  1. **Login to Router (local or Remote)**
+      - **Local login:** using console cable & Putty App
+      - **Remote login:** using Putty App & (SSH  or telnet)
+  2. **Enter to system view to begin set your configurations** 
+      - **\<Huawei\>** system-veiw  #to enter to system view
+  3. **Create an ether trunk**
+      - **[Huawei]** interface eth_trunk trunk_id
+  4. **Configure a link aggregation mode**
+      - **IF you want LACP mode**
+          - **[Huawei-Eth-Trunk-Trunk_ID]** mode lacp
+      - **If you want manual mode**
+          - **[Huawei-Eth-Trunk-Trunk_ID]** mode manual load-balance
+   5. **Add an interface to Eth-Trunk**
+      - **From Interface View** 
+          - **[Huawei]** interface \[interface type\] \[interface-number\]
+          - **[Huawei-[interface-type-[interface-number]]]** eth-trunk trunk_id
+      - **From Eth-Trunk view**
+          - **[Huawei-Eth-Trunk-Trunk_ID]** trunkport \[interface type\] \[interface-number\]
+  6. **Enable the interfaces of different rate are added to the Eth-Trunk**
+      - **[Huawei-Eth-Trunk-Trunk_ID]** mixed-rate link enable
+  7. Configure the LACP system priority
+      -	**[Huawei-Eth-Trunk-Trunk_ID]** lacp priority pariority
+  8. Configure The max. number of active interfaces
+      - **[Huawei-Eth-Trunk-Trunk_ID]** max link-activenumber number
+  9. Configure The min. number of active interfaces
+      - **[Huawei-Eth-Trunk-Trunk_ID]** least link-activenumber number
+  10. Configure the LACP interface priority
+      - **[Huawei-[interface-type-[interface-number]]]** lacp priority priority
 
