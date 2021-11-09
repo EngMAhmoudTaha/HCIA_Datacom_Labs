@@ -10,7 +10,7 @@ impalement all labs  of chapters and the steps for every topic
       - **Local login:** using console cable & Putty App
       - **Remote login:** using Putty App & (SSH  or telnet)
   2. **Enter to system view to begin set your configurations** 
-      - **<Huawei>** system-veiw  #to enter to system view
+      - **\<Huawei\>** system-veiw  #to enter to system view
   3. **Enter to the interface view** 
       - **[Huawei]** interface [interface type] [interface-number]
   4. **Configure the ip address for the interface**
@@ -20,7 +20,7 @@ impalement all labs  of chapters and the steps for every topic
   6. **Back to user view**
       - **[Huawei]** quit
   7. **Save changes**
-      - **<Huawei>** save
+      - **\<Huawei\>** save
 ______________________________________________________________________________________________________________________________________________________________________________  
   
   ## CH5 Static Route IP Address Configuration commands
@@ -30,7 +30,7 @@ ________________________________________________________________________________
       - **Local login:** using console cable & Putty App
       - **Remote login:** using Putty App & (SSH  or telnet)
   2. **Enter to system view to begin set your configurations** 
-      - **<Huawei>** system-veiw  to enter to system view
+      - **\<Huawei\>** system-veiw  to enter to system view
   3. **Specify the next hop IP address for static route**
       - **[Huawei]** ip route-static network-address {mask | mask length} next-hop_ip_address
   4. **Specify an outbound interface for static route**
@@ -43,7 +43,7 @@ ________________________________________________________________________________
       - **Local login:** using console cable & Putty App
       - **Remote login:** using Putty App & (SSH  or telnet)
   2. **Enter to system view to begin set your configurations** 
-      - **<Huawei>** system-veiw  __to enter to system view__
+      - **\<Huawei\>** system-veiw  __to enter to system view__
   3. **Enable IPv6**
       - **[Huawei]** ipv6
   4. **Specify the next hop IP address for static route**
@@ -60,7 +60,7 @@ ________________________________________________________________________________
       - **Local login:** using console cable & Putty App
       - **Remote login:** using Putty App & (SSH  or telnet)
   2. **Enter to system view to begin set your configurations** 
-      - **<Huawei>** system-veiw  #to enter to system view
+      - **\<Huawei\>** system-veiw  #to enter to system view
   3.  **Create and run an OSPF process and enter the OSPF view**
       - **[Huawei]** ospf [process-id | router-id router-id]
   4. **Create an OSPF area and enter the OSPF area view**
@@ -76,7 +76,7 @@ ________________________________________________________________________________
       - **Local login:** using console cable & Putty App
       - **Remote login:** using Putty App & (SSH  or telnet)
   2. **Enter to system view to begin set your configurations** 
-      - **<Huawei>** system-veiw  #to enter to system view
+      - **\<Huawei\>** system-veiw  #to enter to system view
   3. **Enter to the interface view** 
       - **[Huawei]** interface [interface type] [interface-number]
   4. **Set an OSPF interface cost**
@@ -91,12 +91,12 @@ ________________________________________________________________________________
       - **Local login:** using console cable & Putty App
       - **Remote login:** using Putty App & (SSH  or telnet)
   2. **Check the OSPF neighbor Table**
-      - **<Huawei>** display ospf peer brief 
+      - **\<Huawei\>** display ospf peer brief 
   3. **Check the OSPF LSDB Table**
-      - **<Huawei>** display ospf lsdb 
-      - **<Huawei>** display ospf routing
+      - **\<Huawei\>** display ospf lsdb 
+      - **\<Huawei\>** display ospf routing
   4. **Check the ip routing table**
-      - **<Huawei>** display ip routing-table
+      - **\<Huawei\>** display ip routing-table
   ---
   ## CH7&8 Ethernet switching and VLAN Basics
   ### Basic Interface-VLAN Configuration commands
@@ -104,14 +104,14 @@ ________________________________________________________________________________
       - **Local login:** using console cable & Putty App
       - **Remote login:** using Putty App & (SSH  or telnet)
   2. **Enter to system view to begin set your configurations** 
-      - **<Huawei>** system-veiw  #to enter to system view
+      - **\<Huawei\>** system-veiw  #to enter to system view
   3. **Create one or more VLANs**
       - **If create one vlan**
           - **[Huawei]** vlan vlanid
       - **If more vlans**
           - **[Huawei]** vlan batch {vlan_id1 to vlan_id2}
   4. **Enter to the interface view** 
-      - **[Huawei]** interface [interface type] [interface-number]
+      - **[Huawei]** interface [interface type] \[interface-number\]
   5. **Set the link type of an interface**
       - **[Huawei-[interface-type-[interface-number]]]** port link-type {access | trunk | hybrid } 
   6. **Configure a default VLAN for** 
@@ -127,7 +127,7 @@ ________________________________________________________________________________
       - **[Huawei-[interface-type-[interface-number]]]** port hybrid untagged vlan {[vlan-id1 to {vlan_id2}]
       - **[Huawei-[interface-type-[interface-number]]]** port hybrid tagged vlan {[vlan-id1 to {vlan_id2}]
   9. **Verify the configuration**
-      - **<Huawei>** display vlan
+      - **\<Huawei\>** display vlan
   
   ### Basic MAC-VLAN Configuration commands
   1. **Login to Router (local or Remote)**
@@ -149,6 +149,29 @@ ________________________________________________________________________________
   7. **Enable mac-address based VLAN assignment on an interface**
       - **[Huawei-[interface-type-[interface-number]]]** mac-vlan enable
 
-
+  ---
+  ##CH9 Spanning Tree Protocol (STP)
+  1. **Login to Router (local or Remote)**
+      - **Local login:** using console cable & Putty App
+      - **Remote login:** using Putty App & (SSH  or telnet)
+  2. **Enter to system view to begin set your configurations** 
+      - **\<Huawei\>** system-veiw  #to enter to system view
+  3. **Configure a working mode**
+      - **[Huawei]** stp mode { stp | rstp | mstp }
+  4. **Configure a root bridge *(optional)* **
+      - **[Huawei]** stp root primary 
+  5. **Configure a secondary root bridge *(optional)* **
+      - **[Huawei]** stp root secondary 
+  6. **Configure a STP priority of a switch *(optional)* **
+      - **[Huawei]** stp priority priority 
+  7. **Configure a path cost for a port *(optional)* **
+      - **[Huawei]** stp pathcost-standared {dot1d-1998 | dot1t | legacy }
+      - **[Huawei-[interface-type-[interface-number]]]** stp cost cost
+  8. **Configure a priority for a port**
+      - **[Huawei-[interface-type-[interface-number]]]** stp priority priority
+  9. **Enable STP, RSTP, MSTP**
+      - **[Huawei]** stp enable
+  10. **Validate the STP**
+      - **\<Huawei\>** display stp brief
 
 
