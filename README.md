@@ -150,7 +150,7 @@ ________________________________________________________________________________
       - **[Huawei-[interface-type-[interface-number]]]** mac-vlan enable
 
   ---
-  ##CH9 Spanning Tree Protocol (STP)
+  ## CH9 Spanning Tree Protocol (STP)
   1. **Login to Router (local or Remote)**
       - **Local login:** using console cable & Putty App
       - **Remote login:** using Putty App & (SSH  or telnet)
