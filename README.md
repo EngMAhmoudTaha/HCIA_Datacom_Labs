@@ -158,13 +158,13 @@ ________________________________________________________________________________
       - **\<Huawei\>** system-veiw  #to enter to system view
   3. **Configure a working mode**
       - **[Huawei]** stp mode { stp | rstp | mstp }
-  4. **Configure a root bridge *(optional)* **
+  4. **Configure a root bridge *(optional)***
       - **[Huawei]** stp root primary 
-  5. **Configure a secondary root bridge *(optional)* **
+  5. **Configure a secondary root bridge *(optional)***
       - **[Huawei]** stp root secondary 
-  6. **Configure a STP priority of a switch *(optional)* **
+  6. **Configure a STP priority of a switch *(optional)***
       - **[Huawei]** stp priority priority 
-  7. **Configure a path cost for a port *(optional)* **
+  7. **Configure a path cost for a port *(optional)***
       - **[Huawei]** stp pathcost-standared {dot1d-1998 | dot1t | legacy }
       - **[Huawei-[interface-type-[interface-number]]]** stp cost cost
   8. **Configure a priority for a port**
