@@ -97,4 +97,58 @@ ________________________________________________________________________________
       - **<Huawei>** display ospf routing
   4. **Check the ip routing table**
       - **<Huawei>** display ip routing-table
+  ---
+  ## CH7&8 Ethernet switching and VLAN Basics
+  ### Basic Interface-VLAN Configuration commands
+  1. **Login to Router (local or Remote)**
+      - **Local login:** using console cable & Putty App
+      - **Remote login:** using Putty App & (SSH  or telnet)
+  2. **Enter to system view to begin set your configurations** 
+      - **<Huawei>** system-veiw  #to enter to system view
+  3. **Create one or more VLANs**
+      - **If create one vlan**
+          - **[Huawei]** vlan vlanid
+      - **If more vlans**
+          - **[Huawei]** vlan batch {vlan_id1 to vlan_id2}
+  4. **Enter to the interface view** 
+      - **[Huawei]** interface [interface type] [interface-number]
+  5. **Set the link type of an interface**
+      - **[Huawei-[interface-type-[interface-number]]]** port link-type {access | trunk | hybrid } 
+  6. **Configure a default VLAN for** 
+      - **The access interface**
+          - **[Huawei-[interface-type-[interface-number]]]** port default vlan vlan-id
+      - **The trunk interface**
+          - **[Huawei-[interface-type-[interface-number]]]** port trunk pvid vlan  vlan-id
+      - **The hybrid interface**
+          - **[Huawei-[interface-type-[interface-number]]]** port hybrid pvid vlan vlan-id
+  7. **Allow the VLANs that are passed from this trunk interface** 
+      - **[Huawei-[interface-type-[interface-number]]]** port trunk allow-pass vlan {[vlan-id1 to {vlan_id2}] | all }
+  8. **Specify the VLANs that  act untagged and VLANs that act tagged** 
+      - **[Huawei-[interface-type-[interface-number]]]** port hybrid untagged vlan {[vlan-id1 to {vlan_id2}]
+      - **[Huawei-[interface-type-[interface-number]]]** port hybrid tagged vlan {[vlan-id1 to {vlan_id2}]
+  9. **Verify the configuration**
+      - **<Huawei>** display vlan
+  
+  ### Basic MAC-VLAN Configuration commands
+  1. **Login to Router (local or Remote)**
+      - **Local login:** using console cable & Putty App
+      - **Remote login:** using Putty App & (SSH  or telnet)
+  2. **Enter to system view to begin set your configurations** 
+      - **\<Huawei\>** system-veiw  #to enter to system view
+  3. **Create one or more VLANs**
+      - **If create one vlan**
+          - **[Huawei] vlan vlanid**
+      - **If more vlans**
+          - **[Huawei]** vlan batch {vlan_id1 to vlan_id2}
+  4. **Enter to vlan vlan-id view**
+      - **[Huawei]** vlan vlan-id
+  5. **Associate a Mac address with a VLAN**
+      - **[Huawei-vlan-[vlan-id]]** mac-vlan mac-address mac-address[mask | mask-length]
+  6. **Enter to the interface view** 
+      - **[Huawei]** interface [interface type] [interface-number]
+  7. **Enable mac-address based VLAN assignment on an interface**
+      - **[Huawei-[interface-type-[interface-number]]]** mac-vlan enable
+
+
+
 
