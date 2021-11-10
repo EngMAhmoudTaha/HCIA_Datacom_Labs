@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.3.00.100">
+    <devices>
+        <dev id="9EEC4194-5BC2-4aa4-A694-AB633FF0D6DD" name="SW2" poe="0" model="S3700" settings="" system_mac="4C-1F-CC-04-03-CE" com_port="2000" bootmode="0" cx="621.000000" cy="236.000000" edit_left="652" edit_top="224">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="22" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="6A417EAD-3A91-44dd-8E8C-F6E8A7881987" name="SW1" poe="0" model="S3700" settings="" system_mac="4C-1F-CC-6B-0A-12" com_port="2001" bootmode="0" cx="328.000000" cy="238.000000" edit_left="355" edit_top="226">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="22" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="24B1498C-EC5E-49c9-81AB-E4E8FE91AC7D" name="PC4" poe="0" model="PC" settings=" -simpc_ip 192.168.2.2  -simpc_mask 255.255.255.0  -simpc_gateway 0.0.0.0  -simpc_mac 54-89-98-20-14-1D  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-20-14-1D" com_port="0" bootmode="0" cx="821.000000" cy="427.000000" edit_left="848" edit_top="481">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="CBED595C-A6E0-4693-88B7-89A03230068E" name="PC3" poe="0" model="PC" settings=" -simpc_ip 192.168.1.2  -simpc_mask 255.255.255.0  -simpc_gateway 0.0.0.0  -simpc_mac 54-89-98-57-57-E0  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-57-57-E0" com_port="0" bootmode="0" cx="628.000000" cy="425.000000" edit_left="655" edit_top="479">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="70B414CD-9370-46cc-B46B-8F3BEF26B9FD" name="PC1" poe="0" model="PC" settings=" -simpc_ip 192.168.1.1  -simpc_mask 255.255.255.0  -simpc_gateway 0.0.0.0  -simpc_mac 54-89-98-C3-67-A1  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-C3-67-A1" com_port="0" bootmode="0" cx="145.000000" cy="425.000000" edit_left="172" edit_top="479">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="DCE20DE6-EE10-4aeb-8499-88322119A43A" name="PC2" poe="0" model="PC" settings=" -simpc_ip 192.168.2.1  -simpc_mask 255.255.255.0  -simpc_gateway 0.0.0.0  -simpc_mac 54-89-98-01-6D-B7  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-01-6D-B7" com_port="0" bootmode="0" cx="372.000000" cy="430.000000" edit_left="399" edit_top="484">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="6A417EAD-3A91-44dd-8E8C-F6E8A7881987" destDeviceID="70B414CD-9370-46cc-B46B-8F3BEF26B9FD">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="324.796356" srcBoundRect_Y="295.863831" srcOffset_X="-74.000000" srcOffset_Y="-4.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="202.203659" tarBoundRect_Y="421.136169" tarOffset_X="1.000000" tarOffset_Y="-1.000000" />
+        </line>
+        <line srcDeviceID="6A417EAD-3A91-44dd-8E8C-F6E8A7881987" destDeviceID="DCE20DE6-EE10-4aeb-8499-88322119A43A">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="364.646210" srcBoundRect_Y="307.092621" srcOffset_X="5.000000" srcOffset_Y="-3.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="389.353790" tarBoundRect_Y="414.907379" tarOffset_X="7.000000" tarOffset_Y="-2.000000" />
+        </line>
+        <line srcDeviceID="9EEC4194-5BC2-4aa4-A694-AB633FF0D6DD" destDeviceID="CBED595C-A6E0-4693-88B7-89A03230068E">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="649.598328" srcBoundRect_Y="306.154175" srcOffset_X="-74.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="653.401672" tarBoundRect_Y="408.845825" tarOffset_X="7.000000" tarOffset_Y="-3.000000" />
+        </line>
+        <line srcDeviceID="9EEC4194-5BC2-4aa4-A694-AB633FF0D6DD" destDeviceID="24B1498C-EC5E-49c9-81AB-E4E8FE91AC7D">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="679.230103" srcBoundRect_Y="292.824768" srcOffset_X="13.000000" srcOffset_Y="-5.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="816.769897" tarBoundRect_Y="424.175232" tarOffset_X="9.000000" tarOffset_Y="-7.000000" />
+        </line>
+        <line srcDeviceID="6A417EAD-3A91-44dd-8E8C-F6E8A7881987" destDeviceID="9EEC4194-5BC2-4aa4-A694-AB633FF0D6DD">
+            <interfacePair lineName="Copper" srcIndex="22" srcBoundRectIsMoved="1" srcBoundRect_X="398.182770" srcBoundRect_Y="264.705231" srcOffset_X="-8.000000" srcOffset_Y="-21.000000" tarIndex="22" tarBoundRectIsMoved="1" tarBoundRect_X="604.817261" tarBoundRect_Y="263.294769" tarOffset_X="-24.000000" tarOffset_Y="-21.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="81" top="500" right="302" bottom="542" content="VLAN 10&#x0D;&#x0A;ip add: 192.168.1.1/24" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="328" top="500" right="549" bottom="542" content="VLAN 20&#x0D;&#x0A;ip add: 192.168.2.1/24" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="571" top="501" right="792" bottom="543" content="VLAN 10&#x0D;&#x0A;ip add: 192.168.1.2/24" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="818" top="501" right="1039" bottom="543" content="VLAN 20&#x0D;&#x0A;ip add: 192.168.2.2/24" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="162" top="2" right="1110" bottom="166" content="Requirements:&#x0D;&#x0A;    - the switches (SW1 and SW2) of an enterprise are connected to multiple PCs,&#x0D;&#x0A;      and PCs with the same services access the network using different devices.&#x0D;&#x0A;      To ensure communication security, the enterprise requires that only PCs with&#x0D;&#x0A;      the same service can directly communicate. To meet this requirement, configure &#x0D;&#x0A;      interface-based VLAN assignment on the switches and add interfaces connected &#x0D;&#x0A;      to PCs with the same service to the same VLAN. In this way, PCs in different VLANs&#x0D;&#x0A;      cannot directly communicate at Layer 2, but PCs in the same VLAN can directly communicate." fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>
