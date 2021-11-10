@@ -206,4 +206,46 @@ ________________________________________________________________________________
       - **[Huawei-Eth-Trunk-Trunk_ID]** least link-activenumber number
   10. Configure the LACP interface priority
       - **[Huawei-[interface-type-[interface-number]]]** lacp priority priority
+---
+  ## CH19 IPv6 Basic
+  ### Basic IPV6 Address Configuration commands
+  1.  **Login to Router (local or Remote)**
+      - **Local login:** using console cable & Putty App
+      - **Remote login:** using Putty App & (SSH  or telnet)
+  2. **Enter to system view to begin set your configurations** 
+      - **\<Huawei\>** system-veiw  #to enter to system view
+  3. **Enable IPv6**
+      - **From system view:**
+          - **[Huawei]** ipv6
+      - **From Interface View:**
+          - **[Huawei]** interface \[interface type\] \[interface-number\]
+          - **[Huawei-[interface-type-[interface-number]]]** ipv6 enable
+  4. **Enter to interface view**
+      - **[Huawei]** interface \[interface type]\ \[interface-number\]
+  5. **Configure LLA for the interface**
+      - **If you want manual configuration**
+          - **[Huawei-[interface-type-[interface-number]]]** ipv6 address ip-address link-local
+      - **If you want auto configuration**
+           - **[Huawei-[interface-type-[interface-number]]]** ipv6 address auto link-local
+  6. Configure GUA for the interface
+      - **If you want manual configuration**
+           - **[Huawei-[interface-type-[interface-number]]]** ipv6 address {ip-address prefix-length | ip-address/prefix-length}
+      - **If you want statfull auto configuration (use DHCP)**
+           - **[Huawei-[interface-type-[interface-number]]]** ipv6 address auto dhcp
+      - **If you want statless auto configuration**
+           - **[Huawei-[interface-type-[interface-number]]]** ipv6 address auto global
+  7. Enable the interface send RA message
+      - **\[Huawei-\[interface-type-\[interface-number\]\]\]** undo ipv6 nd ra halt
+  
+  ### Troubleshoot Configuration steps:
+  1. **Login to Router (local or Remote)**
+        - **Local login:** using console cable & Putty App
+        - **Remote login:** using Putty App & (SSH  or telnet)
+  2. **Enter to system view to begin set your configurations** 
+        - **\<Huawei\>** system-veiw  #to enter to system view
+  3. **Display IPv6 information on an interface**
+        - **\[Huawei\]** display ipv6 interface {brief | \[interface-type\]-\[interface-number\]}
+  4. **Display neighbor entry information**
+        - **\[Huawei\]** display ipv6 neighbors
+
 
