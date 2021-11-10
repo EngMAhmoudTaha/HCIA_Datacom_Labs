@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.3.00.100">
+    <devices>
+        <dev id="03D1F609-7AFD-4a31-A86C-D64E4D9A6CA1" name="R1" poe="0" model="AR1220" settings="" system_mac="00-E0-FC-84-04-86" com_port="2000" bootmode="0" cx="699.000000" cy="300.000000" edit_left="726" edit_top="354">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Ethernet" interfacename="Ethernet" count="8" />
+            </slot>
+        </dev>
+        <dev id="4C8D4C8F-5D6A-4bb1-93BA-BA740C9B88C9" name="R3" poe="0" model="AR1220" settings="" system_mac="00-E0-FC-83-57-16" com_port="2002" bootmode="0" cx="98.000000" cy="200.000000" edit_left="125" edit_top="254">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Ethernet" interfacename="Ethernet" count="8" />
+            </slot>
+        </dev>
+        <dev id="41E9F3C7-04D0-4a09-B284-66938B8C0010" name="R2" poe="0" model="AR1220" settings="" system_mac="00-E0-FC-5A-48-BE" com_port="2001" bootmode="0" cx="400.000000" cy="301.000000" edit_left="427" edit_top="355">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Ethernet" interfacename="Ethernet" count="8" />
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+            </slot>
+            <slot isMainBoard="0" id="1" type="6" />
+        </dev>
+        <dev id="081EB0EF-E898-4286-AD2F-72481A2F60A4" name="R4" poe="0" model="AR1220" settings="" system_mac="00-E0-FC-70-58-56" com_port="2003" bootmode="0" cx="99.000000" cy="400.000000" edit_left="126" edit_top="454">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Ethernet" interfacename="Ethernet" count="8" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="4C8D4C8F-5D6A-4bb1-93BA-BA740C9B88C9" destDeviceID="41E9F3C7-04D0-4a09-B284-66938B8C0010">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="165.954132" srcBoundRect_Y="240.696579" srcOffset_X="0.000000" srcOffset_Y="-15.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="386.045868" tarBoundRect_Y="314.303406" tarOffset_X="-24.000000" tarOffset_Y="-22.000000" />
+        </line>
+        <line srcDeviceID="081EB0EF-E898-4286-AD2F-72481A2F60A4" destDeviceID="41E9F3C7-04D0-4a09-B284-66938B8C0010">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="167.021912" srcBoundRect_Y="413.507751" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="1" tarBoundRectIsMoved="1" tarBoundRect_X="385.978088" tarBoundRect_Y="341.492249" tarOffset_X="-20.000000" tarOffset_Y="6.000000" />
+        </line>
+        <line srcDeviceID="41E9F3C7-04D0-4a09-B284-66938B8C0010" destDeviceID="03D1F609-7AFD-4a31-A86C-D64E4D9A6CA1">
+            <interfacePair lineName="Copper" srcIndex="10" srcBoundRectIsMoved="1" srcBoundRect_X="470.183533" srcBoundRect_Y="327.855560" srcOffset_X="-13.000000" srcOffset_Y="-26.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="682.816467" tarBoundRect_Y="327.144440" tarOffset_X="-33.000000" tarOffset_Y="-29.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="650" top="269" right="753" bottom="291" content="2001::1/64" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="458" top="268" right="561" bottom="290" content="2001::2/64" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="295" top="264" right="398" bottom="286" content="2002::1/64" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="298" top="371" right="401" bottom="393" content="2003::1/64" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="164" top="432" right="218" bottom="454" content="SLAAC" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="165" top="189" right="288" bottom="211" content="Using DHCPv6" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="199" top="0" right="950" bottom="123" content="Requirements:&#x0D;&#x0A;    * Connect R1 and R2 through interfaces with static IPv6 addresses&#x0D;&#x0A;    * Configure R2 as a DHCPv6 server to assign a GUA to R3&#x0D;&#x0A;    * Enable R2 to send RA messages, and Configure R4 to automatically&#x0D;&#x0A;      perform SLAAC beased on the RA messages sent by R2.&#x0D;&#x0A;    * Configure Static Routes to implement mutual access between the devices" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>
