@@ -207,6 +207,81 @@ ________________________________________________________________________________
   10. Configure the LACP interface priority
       - **[Huawei-[interface-type-[interface-number]]]** lacp priority priority
 ---
+  ## CH14 Network Address Translation (NAT)
+  ### STATIC NAT CONF.
+  1. **Login to Router (local or Remote)**
+      - **Local login:** using console cable & Putty App
+      - **Remote login:** using Putty App & (SSH  or telnet)
+  2. **Enter to system view to begin set your configurations** 
+      - **\<Huawei\>** system-veiw  #to enter to system view
+  3. **Use Any Liked Method from This Two Methods** 
+      - **Apply STATIC NAT from system view**
+          - **[Huawei]** nat static global {public_address} inside {private_address}
+      - **Apply STATIC NAT from interface view**
+          - **[Huawei]** interface \[interface-type\] \[interface-number\]
+          -	**[Huawei-[interface-type-[interface-number]]]** nat static global {public_address} inside {private_address}
+  4. **Whatever the method you used, enable the STATIC NAT on the interface**
+       - **\[Huawei-\[interface-type-\[interface-number\]\]\]** nat static enable
+
+  ### DYNAMIC NAT CONF.
+  1. **Login to Router (local or Remote)**
+      - **Local login:** using console cable & Putty App
+      -	**Remote login:** using Putty App & (SSH  or telnet)
+  2. **Enter to system view to begin set your configurations** 
+      - **\<Huawei\>** system-veiw  #to enter to system view
+  3.	**Create an address pool**
+      - **\[Huawei\]** nat address-group \[group-index\] start-address end-adderss
+  4. **Create an ACL rule for NAT**
+      - **\[Huawei\]** acl number
+      - **\[Huawei-acl-\[acl-type\]-acl-num\]** rule permit source source-address source-wildcard 
+  5. **Enter to the interface to complete NAT configuration**
+      - **\[Huawei\]** interface \[interface-type\] \[interface-number\]
+      - **\[Huawei-\[interface-type-\[interface-number\]\]\]** nat outbound acl-number address-group group-index \[no-pat\]
+
+  
+  ### NAPT CONF.
+   1. **Login to Router (local or Remote)**
+      - **Local login:** using console cable & Putty App
+      -	**Remote login:** using Putty App & (SSH  or telnet)
+  2. **Enter to system view to begin set your configurations** 
+      - **\<Huawei\>** system-veiw  #to enter to system view
+  3.	**Create an address pool**
+      - **\[Huawei\]** nat address-group \[group-index\] start-address end-adderss
+  4. **Create an ACL rule for NAT**
+      - **\[Huawei\]** acl number
+      - **\[Huawei-acl-\[acl-type\]-acl-num\]** rule permit source source-address source-wildcard 
+  5. **Enter to the interface to complete NAT configuration**
+      - **\[Huawei\]** interface \[interface-type\] \[interface-number\]
+      - **\[Huawei-\[interface-type-\[interface-number\]\]\]** nat outbound acl-number address-group group-index \[no-pat\]
+
+  ### EasyIP CONF.
+  1. **Login to Router (local or Remote)**
+      - **Local login:** using console cable & Putty App
+      * **Remote login:** using Putty App & (SSH  or telnet)
+  2. **Enter to system view to begin set your configurations** 
+      - **\<Huawei\>** system-veiw  #to enter to system view
+  3.	**Create an ACL rule for NAT**
+      - **\[Huawei\]** acl number
+      - **\[Huawei-acl-\[acl-type\]-acl-num\]** rule permit source source-address source-wildcard 
+  4. **Enter to the interface to complete NAT configuration**
+      - **\[Huawei\]** interface \[interface-type\] \[interface-number\]
+      -	**\[Huawei-\[interface-type-\[interface-number\]\]\]** nat outbound acl-number
+
+  ### NAT SERVER CONF.
+  1. **Login to Router (local or Remote)**
+      - **Local login:** using console cable & Putty App
+      - **Remote login:** using Putty App & (SSH  or telnet)
+  2. **Enter to system view to begin set your configurations** 
+      - **\<Huawei\>** system-veiw  #to enter to system view
+  3. **Enter to the interface to complete NAT configuration**
+      - **\[Huawei\]** interface \[interface-type\] \[interface-number\]
+  4. **Configure NAT server**
+    	- **\[Huawei-acl-\[acl-type\]-acl-num\]** nat server protocol \[protocol-type\] global \[public-address\] \[service-type\] inside \[private-address\] \[port-number\]
+
+
+
+
+---
   ## CH19 IPv6 Basic
   ### Basic IPV6 Address Configuration commands
   1.  **Login to Router (local or Remote)**
